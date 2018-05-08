@@ -189,6 +189,11 @@ export default {
       } else {
         this.userInput = null
       }
+    },
+    format: function(newValue, oldValue) {
+      let mask = this.format
+      this.computedMask = mask.replace(/([a-zA-Z])/gi, '#')
+      // console.log('this.mask', this.computedMask)
     }
   },
   computed: {
