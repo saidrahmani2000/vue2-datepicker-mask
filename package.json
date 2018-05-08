@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mengxiong10/vue2-datepicker.git"
+    "url": "git+https://github.com/Ramya-Palaniswami/vue2-datepicker-mask"
   },
   "keywords": [
     "vue",
@@ -19,9 +19,9 @@
   "author": "xiemengxiong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mengxiong10/vue2-datepicker/issues"
+    "url": "https://github.com/Ramya-Palaniswami/vue2-datepicker-mask/issues"
   },
-  "homepage": "https://github.com/mengxiong10/vue2-datepicker#readme",
+  "homepage": "https://github.com/Ramya-Palaniswami/vue2-datepicker-mask#readme",
   "dependencies": {
     "vue": "^2.2.1",
     "vue-the-mask": "^0.11.1"
