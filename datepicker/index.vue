@@ -15,7 +15,9 @@
     @click="togglePopup"
     @input="handleInput"
     @change="handleChange"
-    @mousedown="$event.preventDefault()">
+    @mousedown="$event.preventDefault()"
+    type="text"
+    v-mask="computedMask">
   <i class="mx-input-icon"
     :class="showCloseIcon ? 'mx-input-icon__close' : 'mx-input-icon__calendar'"
     @mouseenter="hoverIcon"
@@ -62,6 +64,7 @@
 <script>
 import CalendarPanel from './calendar-panel.vue'
 import Languages from './languages.js'
+import {mask} from 'vue-the-mask'
 
 const isObject = function (obj) {
   return obj !== null && typeof obj === 'object'
@@ -433,6 +436,9 @@ export default {
   },
   created () {
     this.initRanges()
+    let mask = this.format
+    this.computedMask = mask.replace(/([a-zA-Z])/gi, '#')
+    // console.log('this.mask', this.computedMask)
   },
   directives: {
     clickoutside: {
@@ -451,7 +457,8 @@ export default {
       unbind (el) {
         document.removeEventListener('click', el['@clickoutside'], true)
       }
-    }
+    },
+    mask
   }
 }
 </script>
