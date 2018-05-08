@@ -6,6 +6,7 @@
 
 ## Demo
 Forked from [vue2-datepicker](<https://mengxiong10.github.io/vue2-datepicker/>)
+Masking is done from the format given.
 
 ![image](https://github.com/mengxiong10/vue2-datepicker/raw/master/screenshot/demo.PNG)
 
@@ -38,7 +39,6 @@ export default {
   }
 }
 
-Masking is done from the format given.
 </script>
 
 <template>
