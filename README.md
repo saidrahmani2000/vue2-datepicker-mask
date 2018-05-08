@@ -1,6 +1,6 @@
 # vue2-datepicker
 
-[中文版](https://github.com/mengxiong10/vue2-datepicker/blob/master/README_CN.md)
+<!-- https://github.com/Ramya-Palaniswami/vue2-datepicker-mask/blob/master/README_CN.md -->
 
 > A Datepicker Component For Vue2
 
@@ -12,7 +12,7 @@ Forked from [vue2-datepicker](<https://mengxiong10.github.io/vue2-datepicker/>)
 ## Install
 
 ```bash
-$ npm install vue2-datepicker --save
+$ npm install vue2-datepicker-mask --save
 ```
 
 ## Usage
@@ -37,6 +37,8 @@ export default {
     }
   }
 }
+
+Masking is done from the format given.
 </script>
 
 <template>
@@ -117,6 +119,6 @@ export default {
 
 ## License
 
-[MIT](https://github.com/mengxiong10/vue2-datepicker/blob/master/LICENSE)
+[MIT](https://github.com/Ramya-Palaniswami/vue2-datepicker-mask/blob/master/LICENSE)
 
 Copyright (c) 2017-present xiemengxiong
