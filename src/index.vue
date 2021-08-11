@@ -13,7 +13,7 @@
       @click="showPopup">
       <input
         ref="input"
-        type="text"
+        type="number"
         autocomplete="off"
         :class="inputClass"
         :name="inputName"
