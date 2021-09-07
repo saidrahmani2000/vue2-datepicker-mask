@@ -17,6 +17,7 @@
     @change="handleChange"
     @mousedown="$event.preventDefault()"
     type="text"
+    inputmode="numeric"
     v-mask="computedMask">
   <i class="mx-input-icon"
     :class="showCloseIcon ? 'mx-input-icon__close' : 'mx-input-icon__calendar'"
