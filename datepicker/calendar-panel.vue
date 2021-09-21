@@ -200,7 +200,18 @@ export default {
   },
   methods: {
     updateNow() {
-      this.now = this.value ? new Date(this.value) : new Date()
+      if (this.value) {
+        this.now = new Date(this.value)
+      }
+      else if (this.$parent.notBefore) {
+        this.now = new Date(this.$parent.notBefore)
+      }
+      else if (this.$parent.notAfter) {
+        this.now = new Date(this.$parent.notAfter)
+      }
+      else {
+        this.now = new Date()
+      }
     },
     // 更新面板选择时间
     updateCalendar() {
